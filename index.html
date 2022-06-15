@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function login() {
+        const value = document.querySelector("#card").value;
+        const password = document.querySelector("#password").value;
+        if (value == "29830081399146103" && password == "1998") {
+          window.location = "/account.html";
+        } else {
+          alert("Make sure that the card number and password are correct");
+        }
+      }
+    </script>
+    <title>تسجيل الدخول</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="image"><img src="./css//j.png" alt=" " /></div>
+
+        <div class="form-container">
+          <p class="choose">اختر نوع الدخول</p>
+          <div class="tabs">
+            <div>اسم المستخدم</div>
+            <div>الدخول السريع</div>
+          </div>
+
+          <div class="form">
+            <input
+              type="text"
+              placeholder="رقم البطاقة"
+              id="card"
+              name="card"
+            />
+            <input
+              type="text"
+              placeholder="كلمة السر"
+              id="password"
+              name="pssword"
+            />
+            <button onclick="{login()}">الدخول</button>
+          </div>
+          <div class="info">
+            <div>
+              <input type="radio" name="rem" id="rem" />
+              <label for="rem">تذكرني</label>
+            </div>
+            <div>استعادة بيانات الدخول</div>
+          </div>
+
+          <div class="signup">
+            <span class="material-symbols-outlined signup-icon">
+              person_add </span
+            >التسجيل
+          </div>
+          <div class="about">
+            <p>
+              بنك كين شركة مساهمة بسجل تجاري رقم RA38019711 وعنوان مقره الرئيسي
+              8229 جزيرة ميران، ولاية نبل 12711 - 3952، ولاية نبل العربية وخاضع
+              لإشراف ورقابة مؤسسة النقد
+            </p>
+          </div>
+
+          <div class="more">المزيد</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

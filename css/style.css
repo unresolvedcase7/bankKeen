@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+main {
+  background-color: #070c52;
+  min-height: 100vh;
+}
+p {
+  font-size: 19px;
+}
+
+.image {
+  width: 260px;
+  margin: 3em auto;
+}
+img {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose {
+  margin-bottom: 1em;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.tabs div {
+  padding: 1em 1.5em;
+  flex-basis: 50%;
+  font-size: 22px;
+}
+.tabs div:first-child {
+  border-top: 3px solid white;
+  font-weight: bold;
+}
+.tabs div:last-child {
+  border: 1px solid white;
+  border-left: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+}
+
+input {
+  height: 60px;
+  padding: 10px;
+  margin: 0.5em 0;
+  font-size: 20px;
+  color: grey;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 0.5em;
+  height: 60px;
+  font-size: 20px;
+  background-color: #dbb659;
+  outline: none;
+  border: none;
+}
+.signup {
+  display: flex;
+}
+.signup-icon {
+  margin-left: 20px;
+}
+
+.info,
+.info div {
+  display: flex;
+}
+.info {
+  padding: 0 2em;
+  width: 100%;
+  justify-content: space-between;
+}
+.info div {
+  align-items: center;
+}
+.info div input {
+  margin-left: 10px;
+}
+
+.about {
+  text-align: center;
+  padding: 2em;
+}
+.about p {
+  font-size: 14px;
+}
+
+.more {
+  padding: 1em 6em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #dbb659;
+}
+/* --- account --- */
+.types {
+  display: flex;
+  border-bottom: 1px solid #dbb659;
+}
+.types div {
+  padding: 1em 2em;
+  font-size: 20px;
+}
+.types div:first-of-type {
+  border-bottom: 2px solid #dbb659;
+}
+
+.accounts-types {
+  display: flex;
+}
+.accounts-types div {
+  padding: 1em 1em;
+  font-size: 18px;
+}
+.accounts-types div:first-of-type {
+  font-weight: bold;
+}
+.amount {
+  padding-right: 1em;
+  margin-bottom: 1em;
+  font-size: 35px;
+}
+
+.account-info-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+.info-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.info-icon span,
+.wallet,
+.back {
+  color: grey;
+}
+
+.account-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+}
+.account-info {
+  text-align: center;
+}
+.account-info div:first-child {
+  color: grey;
+}
+.account-info div:nth-child(2) {
+  color: brown;
+  margin: 10px 0;
+}
+.account-info div:last-child {
+  color: rgb(99, 99, 99);
+  font-weight: bold;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #dbb659;
+  padding-top: 1em;
+}
+.actions > div,
+.actions a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.actions span,
+.actions p {
+  text-align: center;
+  color: grey;
+}
+.actions span {
+  font-size: 35px;
+}
+.actions p {
+  font-size: 14px;
+}
+
+.freezed {
+  margin: 0 1em;
+  margin-top: 2em;
+}
+
+/*--- current ---*/
+.top {
+  background-color: #070c52;
+  padding-bottom: 10px;
+}
+.account {
+  display: flex;
+  padding: 2em;
+}
+.account p {
+  width: 100%;
+  text-align: center;
+}
+.date {
+  padding: 0.5em 0;
+  padding-right: 2em;
+  font-size: 18px;
+  font-weight: bold;
+}
+.transaction {
+  display: flex;
+  margin: 1em 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #dbb659;
+}
+
+.transaction > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction div {
+  font-size: 20px;
+}
+.nd {
+  text-align: center;
+}
+.number {
+  font-size: 40px;
+  color: #dbb659;
+}
+.time {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.trans-wrapper {
+  margin-right: 1em;
+}
+
+.urgent {
+  font-weight: bold;
+  font-size: 24px;
+  color: grey;
+}
+.sum {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px 0;
+  color: brown;
+}
+.person,
+.time,
+.nd {
+  color: grey;
+}
+.nd {
+  line-height: 40px;
+}
